@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+      <link rel="stylesheet" href="./css/reset.css">
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+   <body>
+      <!-- TOP -->
+      <header id="top">
+         <h1 id="display-username"></h1>
+         <label for="menu-toggle" class="menu-btn">
+            <div class="btn"></div>
+         </label>
+         <input type="checkbox" id="menu-toggle">
+
+         <!-- NAVIGATION -->
+         <div class="overlay"></div>
+         <nav id="nav">
+            <ul>
+               <li>
+                  <a class="close" href="#close">Close</a>
+               </li><li>
+                  <a href="index.html">Home</a>
+               </li><li>
+                  <a href="profile.html">Profile</a>
+               </li><li>
+                  <a href="#logout">Logout</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main id="main-container" class="index">
+         <!-- FORM TO ADD WEIGHT -->
+         <section class="add-weight">
+            <input type="text" name="weight" id="weight-input" placeholder="Add Start Weight">
+            <button id="weight-btn">
+               <i class="fas fa-arrow-right"></i>
+            </button>
+         </section>
+
+         <!-- WEIGHT TRACKING CONTAINER -->
+         <section class="tracks-container">
+            <!-- START WEIGHT -->
+            <div class="start-weight-container">
+               <div class="start-weight log-container"></div>
+            </div>
+
+            <!-- PROGRESSION WEIGHT -->
+            <div class="progression-weight-container">
+               <div class="progression-weight log-container"></div>
+            </div>
+         </section>
+      </main>
+
+      <script src="./js/app.js"></script>
+   </body>
+</html>

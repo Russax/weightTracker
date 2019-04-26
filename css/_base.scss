@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+
+   /* Better practice */
+   box-sizing: inherit;
+   text-decoration: inherit;
+   outline: inherit;
+}
+
+html {
+   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%;
+}
+
+body {
+   box-sizing: border-box;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   background-color: #F2F2F2;
+}
+
+#main-container.index input, textarea {
+   font-size: 2em;
+   font-weight: 700;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#main-container.index ::placeholder {
+   font-weight: 400;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#main-container:not(.index) input, textarea {
+   font-size: 1.6em;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#main-container:not(.index) ::placeholder {
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,70 @@
+/* ************************************ */
+/* ****************** MAIN CONTENT START ****************** */
+/* ************************************ */
+
+#main-container.form-container {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background-image: url('../assets/photo.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: right;
+
+   a {
+      color: #FFF;
+      font-size: 1.6em;
+      font-weight: 700;
+   }
+}
+
+.center-vert {
+   width: 100%;
+   max-width: 80%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+#title {
+   font-size: 3em;
+   font-weight: bold;
+   color: #FFF;
+   margin-bottom: 1em;
+}
+
+.form {
+
+   input:not([type=submit]) {
+      width: 100%;
+      border: none;
+      color: #8C8C8C;
+      background-color: rgba(250, 250, 250, .7);
+      border-radius: .5em .5em;
+      margin-bottom: 1em;
+      padding: 1em 1em;
+   }
+
+   input[type=submit] {
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      width: 100%;
+      max-width: 40%;
+      border: none;
+      color: #FFF;
+      background-color: #A6D550;
+      border-radius: .5em .5em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      padding: 1em 1em;
+   }
+}
+
+
+
+/* ************************************ */
+/* ****************** MAIN CONTENT END ****************** */
+/* ************************************ */
